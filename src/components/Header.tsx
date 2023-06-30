@@ -13,11 +13,7 @@ export function Header() {
 
   useEffect(() => {
     const actualTheme = themeCheck();
-    if (actualTheme === Theme.LIGHT) {
-      setIsDarkMode(false);
-    } else {
-      setIsDarkMode(true);
-    }
+    setIsDarkMode(actualTheme === Theme.DARK);
   }, []);
 
   return (
