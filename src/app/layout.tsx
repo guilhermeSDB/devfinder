@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${space_mono.className} flex min-h-screen w-screen flex-col items-center justify-center bg-[#141C2F] text-zinc-50`}
+        className={`${space_mono.className} flex min-h-screen w-screen flex-col items-center justify-center bg-white text-black transition-colors duration-75 dark:bg-[#141C2F] dark:text-zinc-50`}
       >
-        <main className="w-full max-w-screen-md p-6">{children}</main>
+        <main className="w-full max-w-screen-md px-6 md:p-6">{children}</main>
       </body>
     </html>
   );

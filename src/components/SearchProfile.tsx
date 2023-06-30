@@ -9,7 +9,7 @@ export function SearchProfile({ loadUser }: SearchProps) {
   const [userName, setUserName] = useState<string>("");
 
   return (
-    <div className="my-4 flex items-center rounded-2xl bg-[#1F2A48] px-4 md:py-1">
+    <div className="my-4 flex items-center rounded-2xl px-4 shadow-lg shadow-blue-300/50 dark:bg-[#1F2A48] dark:shadow-none md:py-1">
       <Search
         color="#0087FF"
         strokeWidth={1.5}
@@ -25,7 +25,7 @@ export function SearchProfile({ loadUser }: SearchProps) {
       />
 
       <button
-        className="rounded-xl bg-[#0087FF] p-3 font-bold transition-all hover:brightness-125 md:ml-4 md:px-8 md:py-4"
+        className="rounded-xl bg-[#0087FF] p-3 font-bold text-white transition-all hover:brightness-125 md:ml-4 md:px-8 md:py-4"
         onClick={() => loadUser(userName)}
       >
         Pesquisar
